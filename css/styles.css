@@ -1,0 +1,99 @@
+/* LAYOUT */
+body {
+    margin: 0;
+    background: #f5f7fa;
+    font-family: Arial, sans-serif;
+}
+
+.sidebar {
+    width: 260px;
+    height: 100vh;
+    background: #0d6efd;
+    color: white;
+    padding: 30px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+}
+
+.profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid white;
+    object-fit: cover;
+}
+
+.sidebar-links a {
+    display: block;
+    color: white;
+    margin-top: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.sidebar-links a:hover {
+    text-decoration: underline;
+}
+
+.content {
+    margin-left: 280px;
+    padding: 40px;
+}
+
+/* SECTION TITLES */
+.section-title {
+    border-left: 5px solid #0d6efd;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* SKILLS GRID */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 10px;
+}
+
+.skill {
+    background: #e8efff;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+/* TIMELINE */
+.timeline-item {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* PROJECT CARDS */
+.project-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* BACK TO TOP BUTTON */
+#backToTop {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: #0d6efd;
+    color: white;
+    border: none;
+    padding: 12px 16px;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
